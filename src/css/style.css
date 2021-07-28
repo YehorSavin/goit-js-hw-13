@@ -1,0 +1,239 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #fff;
+  font-size: 16px;
+  padding: 30px;
+  background-image: url(https://cdn.wallpapersafari.com/2/68/zCRSn1.gif);
+  background-size: cover;
+}
+
+img,
+video {
+  padding: 10px;
+}
+
+button {
+  display: block;
+}
+
+button[data-action='load-more'].is-hidden {
+  display: none;
+}
+
+button[data-action='load-more'] > .spinner-grow.is-hidden {
+  display: none;
+}
+
+.error {
+  color: red;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.input {
+  margin-right: 40px;
+  border-color: #000000;
+}
+
+.inputBtn {
+  width: 400px;
+  margin-right: 30px;
+}
+
+.load-more {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.submitBtn {
+  border-radius: 5px;
+  background-color: inherit;
+}
+
+.photo-card img {
+  height: 100%;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.photo-card {
+  background-color: rgba(255, 255, 255, 0.808);
+  padding: 5px;
+  margin: 15px;
+  width: calc((100% - 120px) / 4);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+table {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.photo-card:hover {
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+  transform: scale(1.03);
+}
+
+.photo-card:nth-child(4n) {
+  margin-right: 0;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.stats-item {
+  text-align: center;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.material-icons {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  font-family: 'Architects Daughter', cursive;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+
+  padding: 3px 15px 3px 15px;
+  color: white;
+  font-size: 12px;
+  line-height: 1.5;
+  border: 2px solid white;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: rgb(57, 133, 184);
+}
+
+.input {
+  height: 30px;
+  padding-left: 10px;
+
+  border: 2px solid rgb(57, 133, 184);
+  border-radius: 5px;
+
+  font-size: 10px;
+  line-height: 1.25;
+  font-family: 'Architects Daughter', cursive;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: rgba(248, 249, 250, 0.808);
+  cursor: pointer;
+  margin-right: 40px;
+  border-color: #000000;
+}
+
+.submitBtn:hover {
+  background-color: aquamarine;
+  color: rgb(57, 133, 184) !important;
+  font-weight: 700 !important;
+  transition: all 1s ease;
+  color: red !important;
+}
+
+.btn-info {
+  background-color: inherit !important;
+  color: red !important;
+  font-weight: 700 !important;
+}
+
+.btn-info:hover {
+  background-color: aquamarine !important;
+  color: rgb(57, 133, 184) !important;
+}
+
+.pchel {
+  position: absolute;
+  z-index: 1000 !important;
+}
+
+.table {
+  z-index: 0 !important;
+}
+
+.ccd {
+  overflow: hidden;
+  margin: 30px 0;
+  position: relative;
+}
+
+a.ddott {
+  display: block;
+  text-transform: uppercase;
+  line-height: 50px;
+  height: 50px;
+  width: 35%;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0 100px 0 #fff, 1px 76px 10px #000;
+  color: #fff;
+  background: #ed1d25;
+  border-right: 2px solid #fff;
+  border-left: 2px solid #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+a.ddott:hover {
+  text-shadow: 0 50px 0 #fff, 1px 51px 20px #fff;
+  margin-top: -50px;
+  height: 100px;
+  background: #222;
+}
+
+button {
+  padding: 10px 40px;
+  background: none;
+  background-color: rgb(57, 133, 184) !important;
+  border: none;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+button:after,
+button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 2px solid #000;
+  transition: transform 0.2s;
+}
+button:after {
+  transform: translate(3px, 3px);
+}
+button:before {
+  transform: translate(-3px, -3px);
+}
+button:hover::after,
+button:hover::before {
+
+  transform: translate(0);
+}
+
+.is-hidden {
+  display: none;
+}
